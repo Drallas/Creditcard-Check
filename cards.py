@@ -48,6 +48,7 @@ def check_if_card_valid(card):
     for item in range(len(card) -2, -1, -2):
         nr1 = int(card[item])* 2
         result1 += str(nr1)
+    
     for number in result1:
         result2.append(int(number))
 
