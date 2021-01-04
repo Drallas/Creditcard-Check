@@ -9,7 +9,7 @@ from random import choice
 # Get a random card to verify.
 cc = key, ccnumber = choice(list(card_numbers.items())) 
 
-print(f"Checking Cardnumber : {ccnumber}")
+print(f"Entered Cardnumber : {ccnumber}")
 
 nummer = ["0","1","2","3","4","5","6","7","8","9"]
 clean_card_nr = ""
@@ -20,6 +20,7 @@ for item in user_card:
     if item in nummer:
         clean_card_nr += item
 
+print(f"Clean cardnumber : {clean_card_nr} ")
 user_card = clean_card_nr
 
 # Call Function to Check if Card is valid.
