@@ -1,7 +1,6 @@
 """ 
 version : 1.0
-date : 04-01-2021
-url : https://cs50.harvard.edu/x/2021/psets/1/credit/ 
+date : 04-01-2021 
 """
 
 from cards import card_numbers, card_type_check, check_if_card_valid
