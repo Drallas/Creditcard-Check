@@ -58,5 +58,3 @@ def check_if_card_valid(card):
         return True
     else:
         return False
-
-
