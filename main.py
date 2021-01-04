@@ -4,7 +4,7 @@ date : 04-01-2021
 url : https://cs50.harvard.edu/x/2021/psets/1/credit/ 
 """
 
-from cards import card_type_check, card_numbers, check_if_card_valid
+from cards import card_numbers, card_type_check, check_if_card_valid
 from random import choice
 
 # Get a random card to verify.
