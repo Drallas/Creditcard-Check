@@ -25,6 +25,7 @@ user_card = clean_card_nr
 
 # Call Function to Check if Card is valid.
 valid = check_if_card_valid(user_card)
+
 # Call Function to Check what is the Card Type.
 card_type = card_type_check(clean_card_nr)
 
