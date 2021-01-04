@@ -24,7 +24,7 @@ card_numbers = {
 }
 
 
-def card_type_check(card):
+def check_card_type(card):
     """Function takes a Card number and returns Brand name or None"""
     if int(card[0:2]) == 34 or int(card[0:2]) == 37:
         return "American Express"

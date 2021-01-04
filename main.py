@@ -3,7 +3,7 @@ version : 1.0
 date : 04-01-2021 
 """
 
-from cards import card_numbers, card_type_check, check_if_card_valid
+from cards import card_numbers, check_card_type, check_if_card_valid
 from random import choice
 
 # Get a random card to verify.
@@ -27,7 +27,7 @@ user_card = clean_card_nr
 valid = check_if_card_valid(user_card)
 
 # Call Function to Check what is the Card Type.
-card_type = card_type_check(clean_card_nr)
+card_type = check_card_type(clean_card_nr)
 
 # Display the results.
 if valid:
