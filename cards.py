@@ -38,6 +38,8 @@ def check_card_type(card):
         return "Discover"
     elif int(card[0:1]) == 4:
         return "Visa"
+    else:
+        return None
 
 def check_if_card_valid(card):
     """Function takes a Card number and returns True or False if it's valid."""

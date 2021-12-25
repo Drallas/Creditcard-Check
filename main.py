@@ -1,36 +1,36 @@
 """ 
-version : 1.0
-date : 04-01-2021 
+version : 1.1
+date : 25-12-2021
 """
 
 from cards import card_numbers, check_card_type, check_if_card_valid
 from random import choice
 
-# Get a random card to verify.
-cc = key, ccnumber = choice(list(card_numbers.items())) 
-
-print(f"Entered Cardnumber : {ccnumber}")
-
-nummer = ["0","1","2","3","4","5","6","7","8","9"]
+# Global Variables
 clean_card_nr = ""
-user_card = ccnumber
 
-# Remove unwanted chars and symbols.
-for item in user_card:
-    if item in nummer:
-        clean_card_nr += item
+# A random Credit Card number is retrieved from the card_numbers list and assigned to the variable card_to_to_verify.
+card_to_to_verify = choice(list(card_numbers.items()))
 
-print(f"Clean cardnumber : {clean_card_nr} ")
-user_card = clean_card_nr
+# Unpack the tuple and assing the values to the variables cc_num and cc_type
+card_type = card_to_to_verify[0]
+card_num = card_to_to_verify[1]
 
-# Call Function to Check if Card is valid.
-valid = check_if_card_valid(user_card)
+print(f"Card Brand : {card_type} & Card Number : {card_num}")
 
-# Call Function to Check what is the Card Type.
+# Filter out unwanted chars (space, -, /, etc ) keepping only (0-9)
+for char in card_num:
+    if char.isdigit():
+        clean_card_nr += char
+
+# Call the function to Check if Card is valid.
+valid = check_if_card_valid(clean_card_nr)
+
+# Call the function to Check what is the Card Type.
 card_type = check_card_type(clean_card_nr)
 
-# Display the results.
+# Display the results of the check.
 if valid:
     print(f"This a valid {card_type}")
 else:
-    print(f"This a none valid {card_type}")
+    print(f"This an invalid {card_type}")
