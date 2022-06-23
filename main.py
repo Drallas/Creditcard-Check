@@ -12,7 +12,7 @@ clean_card_nr = ""
 # A random Credit Card number is retrieved from the card_numbers list and assigned to the variable card_to_to_verify.
 card_to_to_verify = choice(list(card_numbers.items()))
 
-# Unpack the tuple and assing the values to the variables cc_num and cc_type
+# Unpack the tuple and map the values to the variables card_type and card_num strings.
 card_type = card_to_to_verify[0]
 card_num = card_to_to_verify[1]
 
