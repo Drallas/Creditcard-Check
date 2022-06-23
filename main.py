@@ -16,7 +16,7 @@ card_to_to_verify = choice(list(card_numbers.items()))
 card_type = card_to_to_verify[0]
 card_num = card_to_to_verify[1]
 
-print(f"Card Brand : {card_type} & Card Number : {card_num}")
+print(f"Picked a Card : {card_type} & With Number : {card_num} to check for validity")
 
 # Filter out unwanted chars (space, -, /, etc ) keepping only (0-9)
 for char in card_num:
